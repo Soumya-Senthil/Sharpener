@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+    <title>Schedule a Call</title>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("nav").style.backgroundColor = "rgba(0,0,0,0.4)";
+            } else {
+                document.getElementById("nav").style.backgroundColor = "transparent";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="nav">
+        <a href="/" class="logo">
+            <img id="img" src="formbgimage.jpg">
+            <h1>MSTechnologies</h1>
+        </a>
+        <div class="right-nav">
+            <a class="home">Home</a>
+            <a><button>Schedule a Call</button></a>
+            <a><button>Hire With Us</button></a>
+        </div>
+    </nav>
+    <div class="form-holder">
+        <form>
+            <div class="header">
+                <div class="bac-holder">
+                    <p class="bac">Book a call</p>
+                    <p class="bac-call">Call</p>
+                </div>
+                <p>Book a call slot and our respective will call you within 1hr of selected time.</p>
+                <hr>
+            </div>
+            <div class="form-input">
+                <label id="name">Name:</label>
+                <input for="name" type="name" required><br>
+            </div>
+            <div class="form-input">
+                <label id="email">Email:</label>
+                <input for="email" type="email" required><br>
+            </div>
+            <div class="form-input">
+                <label id="phone">Phone:</label>
+                <input for="phone" type="phone" required><br>
+            </div>
+            <div class="form-input">
+                <label id="date">Time for call:</label>
+                <div style="display:flex;width:100%;">
+                    <input for="date" type="date" style="width:50%;" required>
+                    <input type="time" style="width:50%;" required>
+                </div>
+            </div>
+            <button type="submit">GET A CALL</button>
+        </form>
+    </div>
+    <div id="Users" style="max-width:1400px; margin:15px;">              
+    </div>
+    <footer>
+      <p>MS Technologies</p>
+      </footer>
+       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <script src="/form.js"></script>
+</body>
+</html>
